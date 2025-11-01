@@ -1,98 +1,149 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Team 6 – Developer Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team 6 – Developer Portfolio Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#home">Team 6 Portfolio</a>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#home">Team 6 Portfolio</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto align-items-center">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#team">Our Team</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Our Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 
-            <!-- Dark / Light Mode Toggle Button -->
-            <li class="nav-item">
-              <button id="theme-toggle" class="btn btn-outline-secondary ms-2">
-                <i class="fa fa-moon"></i>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Home Section -->
-  <section id="home" class="section-padding text-center">
-    <div class="container">
-      <h1>Welcome to Team 6 Developer Portfolio</h1>
-      <p>Showcasing our skills, projects, and teamwork from CS 212.</p>
-    </div>
-  </section>
-
-  <!-- Team Section -->
-  <section id="team" class="section-padding">
-    <div class="container">
-      <h2 class="text-center mb-4">Meet the Team</h2>
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <div class="card team-member">
-            <img src="assets/images/sample.jpg" class="card-img-top" alt="Member" />
-            <div class="card-body text-center">
-              <h5 class="card-title">Angel Sotelo‑Ayala</h5>
-              <p class="card-text">Web Developer & Designer</p>
-              <a href="profile.html" class="btn btn-primary">View Profile</a>
+                        <!-- Dark/Light mode toggle -->
+                        <li class="nav-item">
+                            <button id="theme-toggle" class="btn btn-outline-secondary ms-2">
+                                <i class="fa fa-moon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </div>
-        <!-- Duplicate this block for each team member -->
-      </div>
-    </div>
-  </section>
+        </nav>
+    </header>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section-padding bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Contact Us</h2>
-      <form class="mx-auto" style="max-width: 500px;">
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Your Name">
+    <!-- Home Section -->
+    <section id="home" class="section-padding text-center">
+        <div class="container">
+            <h1>Welcome to Team 6 Developer Portfolio</h1>
+            <p>Showcasing our skills, projects, and teamwork from CS 212.</p>
         </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Your Email">
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary w-100">Send</button>
-      </form>
-    </div>
-  </section>
+    </section>
 
-  <footer class="text-center py-3">
-    <p>© 2024 Team 6 | CS 212 Developer Portfolio</p>
-  </footer>
+    <!-- Team Section -->
+    <section id="team" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-4">Meet the Team</h2>
+            <div class="row gy-4 justify-content-center">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+                <!-- Angel -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card team-member h-100">
+                        <img src="assets/images/angel.jpg" class="card-img-top" alt="Angel Sotelo‑Ayala" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Angel Sotelo‑Ayala</h5>
+                            <p class="card-text">Frontend Developer | UI Styling Lead</p>
+                            <a href="angel.html" class="btn btn-primary">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marcell -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card team-member h-100">
+                        <img src="assets/images/marcell.jpg" class="card-img-top" alt="Marcell Kapas" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Marcell Kapas</h5>
+                            <p class="card-text">Frontend Developer | Flexbox & Dark/Light Mode Implementation</p>
+                            <a href="marcell.html" class="btn btn-primary">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Matthew -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card team-member h-100">
+                        <img src="assets/images/matthew.jpg" class="card-img-top" alt="Matthew Schultz" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Matthew Schultz</h5>
+                            <p class="card-text">Frontend Developer | Contact Page & Bootstrap Styling</p>
+                            <a href="matthew.html" class="btn btn-primary">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tristen -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card team-member h-100">
+                        <img src="assets/images/tristen.jpg" class="card-img-top" alt="Tristen Corella" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tristen Corella</h5>
+                            <p class="card-text">Team Leader | UI Cleanup & Responsiveness Testing</p>
+                            <a href="tristen.html" class="btn btn-primary">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ethan -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card team-member h-100">
+                        <img src="assets/images/ethan.jpg" class="card-img-top" alt="Ethan Senger" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ethan Senger</h5>
+                            <p class="card-text">Frontend Developer | Navbar & Scroll Animations</p>
+                            <a href="ethan.html" class="btn btn-primary">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form class="mx-auto" style="max-width: 500px;">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>© 2025 Team 6 | CS 212 Developer Portfolio</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
