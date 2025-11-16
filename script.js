@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    //Dark / Light Mode Toggle
+
     const toggleBtn = document.getElementById("theme-toggle");
     const icon = toggleBtn?.querySelector("i");
 
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         toggleBtn.addEventListener("click", () => {
             document.body.classList.toggle("dark-mode");
 
-            //Switch icon style
+
             const dark = document.body.classList.contains("dark-mode");
             icon.classList = dark ? "fa fa-sun" : "fa fa-moon";
         });
