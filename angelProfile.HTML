@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <html>
+
+    <!-- Head cotaining title, links and styles -->
+    <head>
+        <!-- title to webpage -->
+        <title>Angel Sotelo's Portfolio</title>
+
+        <!-- helps with sizing to mobile divices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- links to my website and stylesheets -->
+        <link rel="stylesheet" href="angelProfile.css" />
+
+        <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+        rel="stylesheet"/>
+
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"/>
+    </head>
+
+    <section class="layout" id="layout">
+          <!-- Sidebar will hold the navigation links -->
+        <nav class="sidebar">
+            <div class="row-gap-3" id="navbar">
+                <ul>
+                    <li><button onclick="bgColorChange()" class="btn btn-outline-dark">Toggle Background</button></li>
+                    <li><button class="btn btn-outline-dark">Home</button></li>
+                    <li><button class="btn btn-outline-dark">About</button></li>
+                    <li><button class="btn btn-outline-dark">Contact</button></li>
+                </ul>
+            </div>   
+        </nav>
+
+        <!-- Body will hold all the content -->
+        <div class="body">
+                <body style="font-family: 'Inconsolata', monospace;">
+                    <!-- intro to my portfolio  -->
+                    <h1>Welcome to my Portfolio</h1>
+                        <h3>A little about me</h3>
+                            <p>
+                                My name is Angel Sotelo-Ayala, and I am currently a junior at
+                                Northern Arizona University pursuing a degree in Software Engineering.
+                                I graduated high school with an Associate of Arts degree, which
+                                I completed concurrently, allowing me to work toward finishing my 
+                                bachelors degree ahead of schedule.
+                            </p>
+
+                            <p>
+                                My interest in programming began in high school, where I took
+                                several computer science courses and discovered a passion for
+                                coding and problem-solving. Beyond academics, I enjoy working
+                                on cars—currently restoring and modifying my 2014 Camaro—as
+                                well as following motorsports such as Formula 1 and GT3 racing.
+                                I also value spending time with my family, whether it's
+                                collaborating on home improvement projects or exploring the
+                                outdoors together.
+                            </p>
+
+                    <!-- footer information here  -->
+                    <footer>
+                        <div>
+                            <!-- header to footer  -->
+                            <h2>Personal Information</h2>
+                                <!-- my personal links and whatnot  -->
+                                <p>Email: <a href="mailto:ams3585@nau.edu">ams3585@nau.edu</a></p>
+                                <p>GitHub: <a href="https://github.com/AngelSotelo-Ayala" target="_blank">Visit my GitHub</a></p>
+                                <p>Resume: <a href="https://drive.google.com/file/d/1PJoSzIi_2QQUm4YlTRf8Z28eaYZWD2gS/view?usp=drive_link"target="_blank">Download my Resume</a></p>    
+                        </div>
+                    </footer>
+
+                <!-- link to my js  -->
+                <script src="angelProfile.js" charset="utf-8"></script>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+            </body>
+        </div>
+</section>
+    
+</html>
