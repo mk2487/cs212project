@@ -40,9 +40,16 @@ h1, h2, h3 {
 	font-weight: 600;
 }
 
+.team-member {
+	max-width: 280px;
+	width: 100%;
+}
+
 .team-member img {
-	height: 300px;
+	width: 100%;
+	height: 320px;
 	object-fit: cover;
+	object-position: center;
 }
 
 #contact {
@@ -52,4 +59,61 @@ h1, h2, h3 {
 
 footer {
 	background: rgb(255, 255, 255);
+}
+
+/* back to the top */
+#backToTop {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	background-color: rgb(40, 40, 40);
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	display: none;
+	z-index: 1000;
+	transition: all 0.3s ease;
+}
+
+#backToTop.show {
+	display: block;
+	animation: fadeIn 0.3s;
+}
+
+/* desktop grid layout - centered */
+@media (min-width: 768px) {
+	.row {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 280px));
+		gap: 2rem;
+		justify-content: center;
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+
+	.row > [class*='col-'] {
+		width: auto;
+	}
+}
+
+/* mobile grid layout - centered */
+@media (max-width: 767px) {
+	.row {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+		justify-items: center;
+		max-width: 400px;
+		margin: 0 auto;
+	}
+
+	.row > [class*='col-'] {
+		width: auto;
+	}
+
+	.container {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }
