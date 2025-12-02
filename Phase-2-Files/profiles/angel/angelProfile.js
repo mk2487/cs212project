@@ -18,6 +18,17 @@ function bgColorChange()
             button.classList.add('btn-outline-light');
         });
 
+        // change the cards colors
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.backgroundColor = 'rgb(33, 37, 41)';
+            card.style.color = 'rgb(255, 255, 255)';
+        });
+
+        // change the skills list colors
+        document.querySelectorAll('.skills .list-group-item').forEach(item => {
+            item.classList.remove('list-group-item-light');
+            item.classList.add('list-group-item-dark');
+        });
     } 
 
     // if current color is black
@@ -31,6 +42,17 @@ function bgColorChange()
         document.querySelectorAll('button').forEach(button => {
             button.classList.remove('btn-outline-light');
             button.classList.add('btn-outline-dark');
+        });
+        // change the cards colors
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.backgroundColor = 'rgb(255, 255, 255)';
+            card.style.color = 'rgb(33, 37, 41)';
+        });
+
+        // change the skills list colors
+        document.querySelectorAll('.skills .list-group-item').forEach(item => {
+            item.classList.remove('list-group-item-dark');
+            item.classList.add('list-group-item-light');
         });
     }
 
@@ -46,4 +68,21 @@ function bgColorChange()
             button.classList.add('btn-outline-light');
         });
     }
+}
+// this function will redirect to homepage using a button
+function goToHomepage()
+{
+    // window is the global object representing the browser window
+    // location is a property of window that represents the current URL
+    // href is a property of location that represents the URL as a string
+    window.location.href = "index.html";
+}
+
+// this function will redirect to contact page using a button
+function goToContact()
+{
+    // window is the global object representing the browser window
+    // location is a property of window that represents the current URL
+    // href is a property of location that represents the URL as a string
+    window.location.href = "contact.html";
 }
