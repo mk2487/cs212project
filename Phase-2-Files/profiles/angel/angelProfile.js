@@ -87,3 +87,36 @@ function goToContact()
     window.location.href = "../../contact.html";
 }
 
+// this function will toggle a cool sky wallpaper background
+function coolBackground()
+{
+    const layout = document.getElementById("layout");
+    const currentBG = getComputedStyle(layout).backgroundImage;
+
+    // check if sky background is already applied
+    if (currentBG.includes('sky.jpg'))
+    {
+        // remove the sky background
+        layout.style.backgroundImage = 'none';
+    }
+
+    else
+    {
+        // apply the sky jpg wallpaper background
+        layout.style.backgroundImage = 'url(sky.jpg)';
+        layout.style.backgroundSize = 'cover';
+        layout.style.backgroundPosition = 'center';
+        layout.style.backgroundRepeat = 'no-repeat';
+        layout.style.backgroundAttachment = 'fixed';
+        
+        // change the text as well
+        layout.style.color = 'rgb(233, 236, 239)';
+
+        // change the buttons style
+        document.querySelectorAll('button').forEach(button => {
+            button.classList.remove('btn-outline-dark');
+            button.classList.add('btn-outline-light');
+        });
+
+    }
+}
