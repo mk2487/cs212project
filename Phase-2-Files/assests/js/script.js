@@ -28,6 +28,28 @@ document.addEventListener("DOMContentLoaded", function ()
             }
         });
     });
+
+    // Back to Top Button
+    const backToTopBtn = document.getElementById("backToTop");
+    
+    if (backToTopBtn) {
+        // Show button when scrolled down 300px
+        window.addEventListener("scroll", function() {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add("show");
+            } else {
+                backToTopBtn.classList.remove("show");
+            }
+        });
+
+        // Scroll to top when clicked
+        backToTopBtn.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
 });
 
 // this function toggles the background color between light and dark mode
