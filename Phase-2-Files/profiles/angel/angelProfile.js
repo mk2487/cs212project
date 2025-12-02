@@ -69,20 +69,3 @@ function bgColorChange()
         });
     }
 }
-// this function will redirect to homepage using a button
-function goToHomepage()
-{
-    // window is the global object representing the browser window
-    // location is a property of window that represents the current URL
-    // href is a property of location that represents the URL as a string
-    window.location.href = "index.html";
-}
-
-// this function will redirect to contact page using a button
-function goToContact()
-{
-    // window is the global object representing the browser window
-    // location is a property of window that represents the current URL
-    // href is a property of location that represents the URL as a string
-    window.location.href = "contact.html";
-}
