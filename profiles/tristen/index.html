@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tristen's Profile</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- added above line so that mobile devices do not automatically zoom out and treat like a desktop -->
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./assets/styles/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Start of header section for grid --> 
+<header class="container-fluid bg-dark bg-gradient text-white py-4">
+  <div class="row align-items-center">
+    <div class="col text-center">
+      <h1 class="display-4 text-center">Tristen Corella's Profile</h1>
+      <p class="lead text-center">Software Engineer / Web Developer / Student</p>
+    </div>
+  </div>
+
+  <!-- Start of nav section for grid -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient text-white sticky-top">
+
+  <div class="container">
+    <a class="navbar-brand fs-2" href="#">Team 6 | Tristen's Portfolio</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#aboutme">Summary</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education-experience">Education</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End of nav section for grid --> 
+
+  </header>
+<!-- End of header section for grid --> 
+
+
+
+<!-- Start of main section for grid --> 
+
+<main class="container my-5">
+  <div class="row">
+
+    <!-- Section for about me in navbar/styling -->
+    <section id="aboutme" class="mb-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>About Me</h3> <!-- removed italics from this so it looks cleaner -->
+          <p class="lead">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in porttitor urna. Suspendisse potenti. Praesent mattis,
+  enim a auctor accumsan, quam quam dignissim nibh, et lacinia mi libero efficitur dolor. Donec porta, libero ac porttitor 
+  gravida, lacus ex pulvinar dui, quis fringilla odio enim eu leo. Morbi sed fringilla massa. Nullam vitae elit pellentesque,
+  luctus tellus a, tempus purus. Praesent eu diam at nisi auctor porta congue eget eros. Nunc id massa vel enim interdum 
+  venenatis. Duis et tellus non nisl fermentum imperdiet. Fusce semper sit amet leo sit amet volutpat. Donec id placerat quam.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section for skills in navbar/styling -->
+    <section id="skills" class="mb-5">
+      <h3 class="text-center mb-4">Skills</h3>
+
+      <div class="input-group mb-4">
+        <input type="text" id="skillInput" class="form-control" placeholder="Enter a skill">
+        <select id="skillCategory" class="form-select">
+          <option value="webdev_skills">Web Development</option>
+          <option value="appdev_skills">App Development</option>
+          <option value="data_skills">Data Management</option>
+        </select>
+        <button class="btn btn-primary" onclick="addSkill()">Add Skill</button>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-3 h-100">
+            <h4 class="text-center">Web Development</h4>
+            <ul id="webdev_skills" class="list-group list-group-flush">
+              <li class="list-group-item">Website Creation</li>
+              <!-- removed so it looks cleaner -->
+              <!-- <li><i>Italic</i>, <mark>Mark</mark>, and <sub>Other</sub> stylistic <s>additions</s></li> -->
+              <li class="list-group-item">CSS Enhancement</li>
+              <li class="list-group-item">WordPress Editing</li>
+              <li class="list-group-item">Bootstrap</li>
+              <li class="list-group-item">NodeJS</li>
+              <li class="list-group-item">PHP</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card p-3 h-100">
+            <h4 class="text-center">App Development</h4>
+            <ul id="appdev_skills" class="list-group list-group-flush">
+              <li class="list-group-item">User Interface Creation</li>
+              <li class="list-group-item">React Native Apps</li>
+              <li class="list-group-item">JavaScript Apps</li>
+              <li class="list-group-item">C#</li>
+              <li class="list-group-item">C++</li>
+              <li class="list-group-item">Python</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card p-3 h-100">
+            <h4 class="text-center">Data Management</h4>
+            <ul id="data_skills" class="list-group list-group-flush">
+              <li class="list-group-item">Backend Connections</li>
+              <li class="list-group-item">SQL Management</li>
+              <li class="list-group-item">AWS Management</li>
+              <li class="list-group-item">MongoDB</li>
+              <li class="list-group-item">PostgreSQL</li>
+              <li class="list-group-item">Data Analysis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section for skills in navbar/styling -->
+  
+    <!-- Section for projects in navbar/styling -->
+    <!-- had to remake this section with div so it looks better in a grid -->
+    <section id="projects" class="py-5 bg-light text-center">
+      <div class="container">
+        <h3 class="mb-4">Projects</h3>
+        
+        <!-- clear up for JS  -->
+        <div class="row g-4" id="projects-container">
+          <!-- clear up for JS -->
+        </div>
+      </div>
+    </section>
+    <!-- Section for projects in navbar/styling -->
+
+    <!-- Section for education in navbar/styling -->
+    <section id="education-experience" class="py-5 bg-white text-center">
+      <div class="container">
+        <h3 class="mb-4">Education & Experience</h3>
+        <div id="tables-container">
+          <!-- Changed this section into two separate tables as it appears thats what the assignment wanted -->
+        </div>
+      </div>
+    </section>
+    <!-- Section for education in navbar/styling -->
+
+  </div>
+
+</main>
+<!-- End of main section for grid -->   
+
+  
+<!-- Start of footer section for grid --> 
+
+<footer class="container-fluid bg-dark bg-gradient text-white py-4">
+  <div class="row text-center">
+    <div class="col-12">
+      <h2 class="h4 mb-3">Contact Me</h2>
+      <p class="mb-1">
+        <a href="tel:123456789" class="text-white text-decoration-none">
+          Tel: +123456789
+        </a>
+      </p>
+      <p class="mb-1">
+        <a href="mailto:mail@somemail.com" class="text-white text-decoration-none">
+          Email: mail@somemail.com
+        </a>
+      </p>
+      <p class="mb-0">Mailing Address: 123 XYZ West Street</p>
+    </div>
+  </div>
+  
+  <!-- Moved Download to here as well -->
+
+</footer>
+
+<!-- End of footer section for grid --> 
+
+<script src="./app.js"></script> <!-- adding JS -->
+
+</body>
+
+</html>

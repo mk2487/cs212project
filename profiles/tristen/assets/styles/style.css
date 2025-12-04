@@ -1,0 +1,177 @@
+/* Body Section */
+body {
+    background-color: #68646d;
+    padding-top: 50px;
+    height: 100vh; /* stretch full viewport height */
+    margin: 0; /* remove default spacing */
+    
+  }
+
+/* Body Section */
+
+/* Header Section */
+
+header { 
+    position: fixed; 
+    top: 0;
+    z-index: 100; /* keeps on top */
+    padding: 10px; /* dont have it hug left so harshly */
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+
+} 
+
+/* Header Section */
+
+/* Main Section */
+
+main { 
+  font-family: 'Montserrat', sans-serif;
+    /* make room so header and footer don't block anything */
+    padding-top: 150px;
+    padding-bottom: 250px;
+  }
+
+/* Main Section */
+
+/* Removed Side Bar Section for Bootstrap */
+section {
+  scroll-margin-top: 250px; 
+}
+  
+/* About Me Section */
+
+/* add background color and padding/margins around section*/
+#aboutme {
+    background-color: #ffffff; 
+    padding: 25px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }
+
+/* Stylize header saying About Me */
+#aboutme h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+/* Stylize paragraph of about me content */
+#aboutme p {
+    line-height: 1.6;
+    color: #555;
+  }
+
+/* About Me Section */
+
+/* Education Section */
+
+/* add background color and padding/margins around section*/
+#education-experience h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    margin-top: 1px
+  }
+#education-experience {
+    padding: 20px;
+    margin-bottom: 75px;
+    border-radius: 10px;
+  }
+
+/* stylize table itself */  
+#education-experience table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+/* stylize table headers and cells with padding and alignment */
+#education-experience th, #education-experience td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+
+/* Education Section */
+
+/* Skills Section */
+
+/* stylize skills section overall */
+#skills {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+/* stylize title of skills section */
+#skills h3 {
+    font-size: 2rem;
+    margin-top: 0px; /* new to assignment 5 */
+  }
+  
+
+/* Skills Section */
+
+/* Projects Section */
+
+#projects h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    margin-top: 1px
+  }
+
+#projects {
+    background-color: #ffffff; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  /* change description size */
+  #projects .project p {
+    font-size: 2rem; 
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-top: auto; /* move text up top below images */
+  }
+
+/* Projects Section */
+
+
+  /* Footer/Contact Section */
+  footer { 
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* keeps on top */
+    padding: 10px; /* dont have it hug left so harshly */
+    width: 100%;
+    
+  }
+
+
+
+/* add background color and padding/margins around section*/
+
+
+/* Footer/Contact Section */
+
+/* Responsive Design Section */
+
+/* mobile is the default */
+
+/* tablet screens (but changes still apply to desktop as it applies these as the minimum width is met) */
+@media (min-width: 768px) {
+  body {
+    font-size: 1.175rem; /* scale font to be a little larger */
+  }
+}
+
+/* desktop screens */
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.35rem; /* scale font slightly larger again */
+  }
+}
+
+/* Responsive Design Section */
